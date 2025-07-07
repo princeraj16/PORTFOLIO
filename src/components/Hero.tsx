@@ -62,10 +62,50 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 min-h-screen flex flex-col justify-center items-center text-center relative z-10">
-        <div className="animate-fade-in">
-          {/* Profile Photo */}
-          <div className="mb-8 animate-slide-up">
-            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-12 animate-fade-in">
+          {/* Left: Name and Info */}
+          <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+            <h1 className="text-5xl md:text-7xl font-serif text-gray-800 mb-6 animate-slide-up transition-transform duration-300 hover:scale-105 hover:text-earthy-brown cursor-pointer">
+              Hello, I'm{' '}
+              <span className="text-earthy-brown bg-gradient-to-r from-earthy-brown to-olive-cream bg-clip-text text-transparent animate-pulse">
+                Prince Raj Sharma
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              DevOps & Data Science Explorer
+            </p>
+            <div className="mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+              <p className="text-lg text-gray-700 mb-4 font-medium">Tech Stack:</p>
+              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-white/20 max-w-md mx-auto md:mx-0">
+                <span className="text-earthy-brown font-mono text-lg">
+                  {typedText}
+                  <span className="border-r-2 border-earthy-brown animate-pulse ml-1"></span>
+                </span>
+              </div>
+            </div>
+            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto md:mx-0 animate-slide-up italic" style={{ animationDelay: '0.6s' }}>
+              "Automating Ideas with DevOps, Powering Insights with Data Science."
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-slide-up" style={{ animationDelay: '0.8s' }}>
+              <button 
+                onClick={handleDownloadResume}
+                className="bg-earthy-brown hover:bg-opacity-90 text-white px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
+              >
+                <Download size={20} />
+                Download Resume
+              </button>
+              <button 
+                onClick={handleConnectClick}
+                className="bg-white/50 backdrop-blur-sm hover:bg-white/80 text-earthy-brown border border-earthy-brown/20 px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
+              >
+                <MessageCircle size={20} />
+                Let's Connect
+              </button>
+            </div>
+          </div>
+          {/* Right: Profile Photo */}
+          <div className="flex-1 flex justify-center md:justify-end items-center mb-8 md:mb-0 animate-slide-up">
+            <div className="w-48 h-48 rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm transition-transform duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:shadow-earthy-brown/30">
               <img 
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
                 alt="Prince Raj Sharma" 
@@ -73,51 +113,8 @@ const Hero = () => {
               />
             </div>
           </div>
-
-          <h1 className="text-5xl md:text-7xl font-serif text-gray-800 mb-6 animate-slide-up">
-            Hello, I'm{' '}
-            <span className="text-earthy-brown bg-gradient-to-r from-earthy-brown to-olive-cream bg-clip-text text-transparent">
-              Prince Raj Sharma
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            DevOps & Data Science Explorer
-          </p>
-          
-          <div className="mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <p className="text-lg text-gray-700 mb-4 font-medium">Tech Stack:</p>
-            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-white/20 max-w-md mx-auto">
-              <span className="text-earthy-brown font-mono text-lg">
-                {typedText}
-                <span className="border-r-2 border-earthy-brown animate-pulse ml-1"></span>
-              </span>
-            </div>
-          </div>
-          
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto animate-slide-up italic" style={{ animationDelay: '0.6s' }}>
-            "Automating Ideas with DevOps, Powering Insights with Data Science."
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
-            <button 
-              onClick={handleDownloadResume}
-              className="bg-earthy-brown hover:bg-opacity-90 text-white px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <Download size={20} />
-              Download Resume
-            </button>
-            <button 
-              onClick={handleConnectClick}
-              className="bg-white/50 backdrop-blur-sm hover:bg-white/80 text-earthy-brown border border-earthy-brown/20 px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <MessageCircle size={20} />
-              Let's Connect
-            </button>
-          </div>
         </div>
-        
-        <div className="absolute bottom-8 animate-bounce">
+        <div className="absolute bottom-8 animate-bounce left-1/2 -translate-x-1/2">
           <ChevronDown size={24} className="text-earthy-brown opacity-70" />
         </div>
       </div>
