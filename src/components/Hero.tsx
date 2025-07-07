@@ -65,9 +65,14 @@ const Hero = () => {
         <div className="w-full flex flex-col md:flex-row items-center justify-center gap-12 animate-fade-in">
           {/* Left: Name and Info */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-            <h1 className="text-5xl md:text-7xl font-serif text-gray-800 mb-6 animate-slide-up transition-transform duration-300 hover:scale-105 hover:text-earthy-brown cursor-pointer">
-              Hello, I'm{' '}
-              <span className="text-earthy-brown bg-gradient-to-r from-earthy-brown to-olive-cream bg-clip-text text-transparent animate-pulse">
+            <h1 className="mb-6 animate-slide-up transition-transform duration-300 cursor-pointer">
+              <span className="block text-3xl md:text-4xl font-serif text-gray-700">Hello, I'm</span>
+              <span
+                className="block text-6xl md:text-8xl font-extrabold bg-gradient-to-r from-earthy-brown via-olive-cream to-peach-beige bg-clip-text text-transparent drop-shadow-lg animate-fade-in-down transition-all duration-500 hover:drop-shadow-[0_0_30px_rgba(181,136,99,0.7)] hover:scale-105"
+                style={{
+                  textShadow: '0 2px 24px rgba(181,136,99,0.25)',
+                }}
+              >
                 Prince Raj Sharma
               </span>
             </h1>
