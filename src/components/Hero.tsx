@@ -3,7 +3,7 @@ import { Download, MessageCircle, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
-  const skills = 'Git · Docker · Python · AWS · Jenkins · ReactJS';
+  const skills = 'Git · Docker · Python · AWS · Jenkins · ReactJS · Kubernetes · Linux · TypeScript · Node.js · MySQL · Pandas · NumPy · TensorFlow · Azure · GCP';
   
   useEffect(() => {
     let index = 0;
@@ -105,7 +105,7 @@ const Hero = () => {
           </div>
           {/* Right: Profile Photo */}
           <div className="flex-1 flex justify-center md:justify-end items-center mb-8 md:mb-0 animate-slide-up">
-            <div className="w-48 h-48 rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm transition-transform duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:shadow-earthy-brown/30">
+            <div className="w-64 h-64 rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm transition-transform duration-700 hover:scale-125 hover:-translate-y-4 hover:rotate-3 hover:shadow-2xl hover:shadow-earthy-brown/40 flex items-center justify-center">
               <img 
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
                 alt="Prince Raj Sharma" 
