@@ -39,8 +39,9 @@ const Hero = () => {
           </div>
           <div className="flex items-center gap-4">
             <span className="block w-16 h-1 bg-peach-beige rounded-full md:ml-0 ml-auto"></span>
+            <span className="text-2xl md:text-3xl font-light">Hello, I'm</span>
             <span
-              className="block text-7xl md:text-9xl font-extrabold bg-gradient-to-r from-peach-beige via-earthy-brown to-olive-cream bg-clip-text text-transparent drop-shadow-2xl animate-scale-in transition-all duration-500 hover:drop-shadow-[0_0_50px_rgba(247,197,159,0.8)] hover:scale-110 hover:underline hover:underline-offset-8 hover:bg-gradient-to-r hover:from-olive-cream hover:via-peach-beige hover:to-earthy-brown"
+              className="block text-5xl md:text-7xl font-extrabold font-playfair bg-gradient-to-r from-peach-beige via-earthy-brown to-olive-cream bg-clip-text text-transparent drop-shadow-2xl transition-all duration-500 hover:drop-shadow-[0_0_50px_rgba(247,197,159,0.8)] hover:scale-110 hover:underline hover:underline-offset-8 hover:bg-gradient-to-r hover:from-olive-cream hover:via-peach-beige hover:to-earthy-brown"
               style={{
                 textShadow: '0 4px 32px rgba(247,197,159,0.35)',
               }}
