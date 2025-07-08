@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Right Side */}
-        <div className="flex-1 flex justify-center items-center relative mt-12 md:mt-0">
+        <div className="flex-1 flex justify-end items-center relative mt-12 md:mt-0 min-h-[32rem]">
           {/* Glowing Ring and Arrows */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
             <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ const Hero = () => {
             <svg className="absolute right-0 top-1/2 -translate-y-1/2" width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="#F7C59F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </div>
           {/* Profile Photo */}
-          <div className="relative z-10 w-64 h-64 rounded-full overflow-hidden flex items-center justify-center shadow-2xl border-4 border-peach-beige bg-gradient-to-br from-peach-beige/30 to-transparent transition-transform duration-700 hover:scale-110 hover:shadow-[0_0_60px_20px_rgba(247,197,159,0.5)]">
+          <div className="relative z-10 w-96 h-96 rounded-full overflow-hidden flex items-center justify-center shadow-2xl border-4 border-peach-beige bg-gradient-to-br from-peach-beige/30 to-transparent transition-transform duration-700 hover:scale-110 hover:shadow-[0_0_60px_20px_rgba(247,197,159,0.5)]">
             <img 
               src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
               alt="Prince Raj Sharma" 
