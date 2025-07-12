@@ -32,23 +32,54 @@ const Hero = () => {
     <section id="hero" className="min-h-screen relative overflow-hidden pt-20 text-white" style={{ backgroundColor: '#001524' }}>
       {/* Professional Background Effects */}
       <div className="absolute inset-0">
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/30 to-blue-900/20"></div>
-        
         {/* Animated Gradient Mesh */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/10 via-blue-600/10 to-cyan-600/10 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/30 to-blue-900/20 animate-pulse"></div>
         
-        {/* Subtle Moving Elements */}
+        {/* Dynamic Moving Gradients */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/10 via-blue-600/10 to-cyan-600/10 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-800/5 via-transparent to-cyan-800/5 animate-pulse delay-1000"></div>
+        
+        {/* Floating Animated Elements */}
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/5 to-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-gradient-to-r from-cyan-400/3 to-blue-400/3 rounded-full blur-2xl animate-pulse delay-500"></div>
+        
+        {/* Animated Geometric Shapes */}
+        <div className="absolute top-20 left-20 w-8 h-8 border border-cyan-400/20 rotate-45 animate-spin-slow"></div>
+        <div className="absolute top-40 right-32 w-6 h-6 border border-blue-400/20 rounded-full animate-bounce"></div>
+        <div className="absolute bottom-32 left-1/3 w-4 h-4 bg-cyan-400/10 rotate-45 animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/4 w-12 h-12 border border-blue-400/15 rotate-45 animate-spin-slow"></div>
+        
+        {/* Animated Lines */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent animate-pulse"></div>
+          <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-300/15 to-transparent animate-pulse delay-500"></div>
+        </div>
+
+        {/* Animated Particles */}
+        <div className="absolute top-16 left-16 w-2 h-2 bg-cyan-400 rounded-full animate-float opacity-60"></div>
+        <div className="absolute top-32 right-24 w-1 h-1 bg-blue-400 rounded-full animate-bounce opacity-40"></div>
+        <div className="absolute top-48 left-1/3 w-3 h-3 bg-cyan-300 rounded-full animate-ping opacity-30"></div>
+        <div className="absolute top-64 right-1/3 w-2 h-2 bg-blue-300 rounded-full animate-float opacity-50"></div>
+        <div className="absolute top-80 left-1/2 w-1 h-1 bg-cyan-400 rounded-full animate-bounce opacity-60"></div>
+        <div className="absolute top-96 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-glow opacity-40"></div>
         
         {/* Professional Grid Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(34,211,238,0.15) 1px, transparent 0)`,
             backgroundSize: '50px 50px'
           }}></div>
         </div>
+
+        {/* Animated Wave Effect */}
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-cyan-500/10 via-transparent to-transparent animate-pulse"></div>
+        
+        {/* Floating Tech Icons */}
+        <div className="absolute top-1/4 right-1/4 text-cyan-400/20 text-4xl animate-float">⚡</div>
+        <div className="absolute bottom-1/3 left-1/4 text-blue-400/20 text-3xl animate-bounce">🔧</div>
+        <div className="absolute top-2/3 right-1/3 text-cyan-300/20 text-2xl animate-pulse">🚀</div>
       </div>
 
       <div className="container mx-auto px-6 min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left relative z-10">
