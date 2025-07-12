@@ -30,27 +30,6 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen relative overflow-hidden pt-20 text-white" style={{ backgroundColor: '#001524' }}>
-      {/* Professional Background Effects */}
-      <div className="absolute inset-0">
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/30 to-blue-900/20"></div>
-        
-        {/* Animated Gradient Mesh */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/10 via-blue-600/10 to-cyan-600/10 animate-pulse"></div>
-        
-        {/* Subtle Moving Elements */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/5 to-cyan-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        
-        {/* Professional Grid Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(34,211,238,0.15) 1px, transparent 0)`,
-            backgroundSize: '50px 50px'
-          }}></div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-6 min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left relative z-10">
         {/* Left Side - Name and Content */}
         <div className="flex-1 flex flex-col justify-center items-center md:items-start gap-6">
