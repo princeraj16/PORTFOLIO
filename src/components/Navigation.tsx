@@ -26,12 +26,12 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       scrolled 
-        ? 'bg-[#5f0f40]/95 backdrop-blur-md shadow-2xl border-b border-pink-400/20' 
+        ? 'bg-[#001524]/95 backdrop-blur-md shadow-2xl border-b border-cyan-400/20' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-serif font-bold bg-gradient-to-r from-pink-300 to-purple-400 bg-clip-text text-transparent">
+          <div className="text-2xl font-serif font-bold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
             Prince Raj Sharma
           </div>
           
@@ -41,17 +41,17 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white/90 hover:text-pink-300 transition-all duration-300 font-medium relative group"
+                className="text-white/90 hover:text-cyan-300 transition-all duration-300 font-medium relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
 
           {/* Mobile Navigation Toggle */}
           <button
-            className="md:hidden text-white hover:text-pink-300 transition-colors duration-300 p-2 rounded-lg hover:bg-pink-500/20"
+            className="md:hidden text-white hover:text-cyan-300 transition-colors duration-300 p-2 rounded-lg hover:bg-cyan-500/20"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -60,13 +60,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 bg-[#5f0f40]/95 backdrop-blur-md rounded-lg border border-pink-400/20">
+          <div className="md:hidden mt-4 pb-4 bg-[#001524]/95 backdrop-blur-md rounded-lg border border-cyan-400/20">
             <div className="flex flex-col space-y-2 p-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white/90 hover:text-pink-300 transition-all duration-300 font-medium py-2 px-4 rounded-lg hover:bg-pink-500/20"
+                  className="text-white/90 hover:text-cyan-300 transition-all duration-300 font-medium py-2 px-4 rounded-lg hover:bg-cyan-500/20"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
