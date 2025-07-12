@@ -28,17 +28,48 @@ const Hero = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const technologies = [
+    'React', 'TypeScript', 'Node.js', 'Python', 'Docker', 'Kubernetes',
+    'AWS', 'Azure', 'GCP', 'Jenkins', 'Git', 'MySQL', 'MongoDB',
+    'TensorFlow', 'Pandas', 'NumPy', 'Linux', 'Ansible', 'Terraform'
+  ];
+
   return (
     <section id="hero" className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden pt-20 text-white">
-      <div className="container mx-auto px-6 min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left relative z-10">
-        {/* Left Side */}
-        <div className="flex-1 flex flex-col justify-center items-center md:items-start gap-6">
+      {/* Enhanced Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Floating particles with different animations */}
+        <div className="absolute top-20 left-10 w-2 h-2 bg-peach-beige rounded-full animate-float opacity-60"></div>
+        <div className="absolute top-40 right-20 w-1 h-1 bg-earthy-brown rounded-full animate-bounce opacity-40"></div>
+        <div className="absolute top-60 left-1/4 w-3 h-3 bg-olive-cream rounded-full animate-ping opacity-30"></div>
+        <div className="absolute top-80 right-1/3 w-2 h-2 bg-peach-beige rounded-full animate-float opacity-50"></div>
+        <div className="absolute top-32 left-1/2 w-1 h-1 bg-earthy-brown rounded-full animate-bounce opacity-60"></div>
+        <div className="absolute top-96 left-1/3 w-2 h-2 bg-peach-beige rounded-full animate-glow opacity-40"></div>
+        <div className="absolute top-48 right-1/4 w-1 h-1 bg-olive-cream rounded-full animate-float opacity-50"></div>
+        
+        {/* Animated lines with glow effect */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-peach-beige to-transparent opacity-30 animate-pulse"></div>
+          <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-earthy-brown to-transparent opacity-20 animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-olive-cream to-transparent opacity-15 animate-pulse delay-500"></div>
+        </div>
+
+        {/* Floating geometric shapes */}
+        <div className="absolute top-1/3 left-1/6 w-4 h-4 border border-peach-beige/20 rotate-45 animate-float"></div>
+        <div className="absolute top-2/3 right-1/6 w-6 h-6 border border-earthy-brown/20 rounded-full animate-bounce"></div>
+        <div className="absolute top-1/2 left-1/3 w-3 h-3 bg-olive-cream/20 rotate-45 animate-glow"></div>
+      </div>
+
+      <div className="container mx-auto px-6 min-h-screen flex flex-col justify-center items-center text-center relative z-10">
+        {/* Main Content */}
+        <div className="flex flex-col justify-center items-center gap-6 max-w-4xl">
           <div className="flex items-center gap-2">
             <span className="text-4xl md:text-5xl font-bold">Hello, I'm</span>
-            <span className="text-5xl text-peach-beige font-bold">.</span>
+            <span className="text-5xl text-peach-beige font-bold animate-pulse">.</span>
           </div>
+          
           <div className="flex items-center gap-4">
-            <span className="block w-16 h-1 bg-peach-beige rounded-full md:ml-0 ml-auto"></span>
+            <span className="block w-16 h-1 bg-peach-beige rounded-full"></span>
             <span
               className="block text-5xl md:text-7xl font-extrabold font-dmserif bg-gradient-to-r from-peach-beige via-earthy-brown to-olive-cream bg-clip-text text-transparent drop-shadow-2xl transition-all duration-500 hover:drop-shadow-[0_0_50px_rgba(247,197,159,0.8)] hover:scale-110 hover:underline hover:underline-offset-8 hover:bg-gradient-to-r hover:from-olive-cream hover:via-peach-beige hover:to-earthy-brown"
               style={{
@@ -48,32 +79,50 @@ const Hero = () => {
               Prince Raj Sharma
             </span>
           </div>
+          
           <h2 className="text-4xl md:text-6xl font-extrabold mt-2 mb-4 text-white">DevOps & Data Science Explorer</h2>
-          <div className="flex gap-4 mt-4">
-            <button className="bg-peach-beige text-gray-900 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-opacity-90 transition-all duration-300">Got a project?</button>
-            <button className="border-2 border-peach-beige text-peach-beige px-6 py-3 rounded-lg font-semibold hover:bg-peach-beige hover:text-gray-900 transition-all duration-300">My resume</button>
+          
+          {/* Enhanced Technology Banner */}
+          <div className="w-full max-w-6xl mt-8 mb-8 overflow-hidden">
+            <div className="flex animate-scroll">
+              {/* First set of technologies */}
+              <div className="flex gap-8 items-center">
+                {technologies.map((tech, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 px-6 py-3 bg-gradient-to-r from-peach-beige/20 to-earthy-brown/20 backdrop-blur-sm border border-peach-beige/30 rounded-full text-peach-beige font-semibold transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-peach-beige/40 hover:to-earthy-brown/40 hover:shadow-lg hover:shadow-peach-beige/25 hover:border-peach-beige/60 cursor-pointer hover:animate-pulse"
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
+              {/* Duplicate set for seamless loop */}
+              <div className="flex gap-8 items-center">
+                {technologies.map((tech, index) => (
+                  <div
+                    key={`duplicate-${index}`}
+                    className="flex-shrink-0 px-6 py-3 bg-gradient-to-r from-peach-beige/20 to-earthy-brown/20 backdrop-blur-sm border border-peach-beige/30 rounded-full text-peach-beige font-semibold transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-peach-beige/40 hover:to-earthy-brown/40 hover:shadow-lg hover:shadow-peach-beige/25 hover:border-peach-beige/60 cursor-pointer hover:animate-pulse"
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-        {/* Right Side */}
-        <div className="flex-1 flex justify-end items-center relative mt-12 md:mt-0 min-h-[32rem]">
-          {/* Glowing Ring and Arrows */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
-            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="200" cy="200" r="160" stroke="#F7C59F" strokeWidth="16" fill="none" opacity="0.3" />
-              <circle cx="200" cy="200" r="130" stroke="#F7C59F" strokeWidth="4" fill="none" opacity="0.2" />
-            </svg>
-            {/* Left Arrow */}
-            <svg className="absolute left-0 top-1/2 -translate-y-1/2" width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M15 19l-7-7 7-7" stroke="#F7C59F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            {/* Right Arrow */}
-            <svg className="absolute right-0 top-1/2 -translate-y-1/2" width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="#F7C59F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </div>
-          {/* Profile Photo */}
-          <div className="relative z-10 w-96 h-96 rounded-full overflow-hidden flex items-center justify-center shadow-2xl border-4 border-peach-beige bg-gradient-to-br from-peach-beige/30 to-transparent transition-transform duration-700 hover:scale-110 hover:shadow-[0_0_60px_20px_rgba(247,197,159,0.5)]">
-            <img 
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" 
-              alt="Prince Raj Sharma" 
-              className="w-full h-full object-cover"
-            />
+          
+          <div className="flex gap-4 mt-8">
+            <button 
+              onClick={handleConnectClick}
+              className="bg-peach-beige text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-peach-beige/25 animate-float"
+            >
+              Got a project?
+            </button>
+            <button 
+              onClick={handleDownloadResume}
+              className="border-2 border-peach-beige text-peach-beige px-8 py-4 rounded-lg font-semibold hover:bg-peach-beige hover:text-gray-900 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-peach-beige/25 animate-float"
+            >
+              My resume
+            </button>
           </div>
         </div>
       </div>
