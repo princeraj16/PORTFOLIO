@@ -69,7 +69,7 @@ const Hero = () => {
               Got a project?
             </button>
             <a 
-              href="/src/resume.pdf" 
+              href="/resume.pdf" 
               download
               className="border-2 border-cyan-400 text-cyan-400 px-8 py-4 rounded-lg font-semibold hover:bg-cyan-400 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-400/25 flex items-center gap-2"
             >
