@@ -35,7 +35,6 @@ const Hero = () => {
         <div className="flex-1 flex flex-col justify-center items-center md:items-start gap-6">
           <div className="flex items-center gap-2">
             <span className="text-4xl md:text-5xl font-bold">Hello, I'm</span>
-            <span className="text-5xl text-cyan-300 font-bold animate-pulse">.</span>
           </div>
           
           <div className="flex items-center gap-4">
